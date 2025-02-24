@@ -1,0 +1,33 @@
+.comments-container {
+  .comments-new {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .comments-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .comments-text-field {
+    border: none;
+    border-bottom: 1px solid #373737;
+    color: white;
+    background-color: transparent;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .comment-btn {
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover{
+      background-color: beige;
+    }
+  }
+}

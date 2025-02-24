@@ -1,0 +1,39 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  .not-found-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    color: whitesmoke;
+    height: 100%;
+    margin-top: 100px;
+
+    .not-found-title {
+      color: red;
+    }
+
+    .not-found-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid #655e5e;
+      background-color: #202020;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+  }
+}

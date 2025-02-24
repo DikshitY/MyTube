@@ -1,0 +1,61 @@
+.comment-container {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0px;
+  justify-content: space-between;
+
+  .comment-content {
+    display: flex;
+    gap: 20px;
+
+    .comment-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .comment-details {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: white;
+    }
+
+    .comment-name {
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .comment-date {
+      font-size: 12px;
+      font-weight: 400;
+      color: #aaaaaa;
+      margin-left: 5px;
+    }
+
+    .comment-text {
+      font-size: 14px;
+    }
+  }
+
+  .comment-btn-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .comment-btn {
+      border-radius: 10px;
+      padding: 5px 10px;
+      border: none;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .delete {
+      background-color: red;
+      color: white;
+    }
+  }
+}

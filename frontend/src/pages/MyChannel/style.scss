@@ -1,0 +1,82 @@
+.mychannel-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  // border: 2px solid red;
+
+  .profile-section {
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 30px;
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+
+      @media (max-width: 425px){
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .profile-details {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (max-width: 425px){
+       gap: 10px;
+      }
+
+      .profile-title {
+        font-size: 48px;
+
+        @media (max-width: 425px){
+          font-size: 24px;
+        }
+      }
+
+      .profile-sub {
+        font-size: 20px;
+      }
+
+      .profile-subscribe {
+        background-color: #cc1a00;
+        font-weight: 500;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        height: max-content;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &.subscribed {
+          background-color: #2f3030;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .videos-section {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+
+    .loader {
+      margin: auto;
+      font-size: 30px;
+      color: white;
+    }
+  }
+
+  .mychannel-hr {
+    margin: 15px 0px;
+    border: 0.5px solid #373737;
+  }
+}

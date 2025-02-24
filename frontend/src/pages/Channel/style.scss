@@ -1,0 +1,50 @@
+.channel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+  
+    .channel-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: #202020;
+      border: 1px solid #373737;
+      padding: 50px 30px;
+      gap: 20px;
+      border-radius: 30px;
+    }
+  
+    .channel-title {
+      font-size: 26px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .channel-text-field {
+      border: 1px solid #373737;
+      border-radius: 3px;
+      padding: 10px;
+      background-color: transparent;
+      width: 100%;
+      color: white;
+      margin-top: 10px;
+    }
+  
+    .channel-btn {
+      border-radius: 10px;
+      border: none;
+      padding: 10px 20px;
+      font-weight: 500;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+  
